@@ -13,14 +13,19 @@
 <link rel="mask-icon" href='https://chekku.com/favicons/safari-pinned-tab.svg'  color="#004750">
 <link rel="shortcut icon" href='https://chekku.com/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://chekku.com/favicons/browserconfig.xml'>
-<title>Themes&#39; Docs | Compose Docs</title><meta property="og:title" content="Themes&#39; Docs" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://chekku.com/docs/" />
-<meta itemprop="name" content="Themes&#39; Docs">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Themes&#39; Docs"/>
-<meta name="twitter:description" content=""/>
+<title>Leverage Github actions | Compose Docs</title><meta property="og:title" content="Leverage Github actions" />
+<meta property="og:description" content="Use github actions with compose theme" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chekku.com/docs/compose/github-actions/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-06-15T09:19:42+01:00" />
+<meta itemprop="name" content="Leverage Github actions">
+<meta itemprop="description" content="Use github actions with compose theme">
+<meta itemprop="dateModified" content="2023-06-15T09:19:42+01:00" />
+<meta itemprop="wordCount" content="108">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Leverage Github actions"/>
+<meta name="twitter:description" content="Use github actions with compose theme"/>
 
 
 <link rel="stylesheet" href="https://chekku.com/css/styles.2644a27b95319a47f541e7073f297c3ce918f385bc3bd2648c1c3f81c24ba060cf98278adfa19f65e2baf52196ce6de92185872262ff5a30abcba7b211fb9503.css" integrity="sha512-JkSie5Uxmkf1QecHPyl8POkY84W8O9JkjBw/gcJLoGDPmCeK36GfZeK69SGWzm3pIYWHImL/WjCry6eyEfuVAw==">
@@ -28,9 +33,11 @@
 
 
 
+  <meta name="description" content="Use github actions with compose theme">
+
 
 </head>
-<body class="page-section" id="pagetop">
+<body class="page-page" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu">
 	<a href='https://chekku.com/' class="nav_brand">
@@ -99,7 +106,7 @@
 </svg></label>
   </div>
   <section class="section aside_inner">
-    <h2 class="section_title active"><a  href="https://chekku.com/docs/" class="group">Themes&#39; Docs</a></h2>
+    <h2 class="section_title"><a  href="https://chekku.com/docs/" class="group">Themes&#39; Docs</a></h2>
       <section class="" id="docs-themes-docs">
   <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://chekku.com/docs/compose/" class="group">Compose Docs</a></h2>
@@ -234,7 +241,7 @@
     </li>
   </ul>
 </nav>
-        <h3 class="section_link"><a id="docs-leverage-github-actions" href="https://chekku.com/docs/compose/github-actions/">Leverage Github actions</a></h3><nav id="TableOfContents">
+        <h3 class="section_link active"><a id="docs-leverage-github-actions" href="https://chekku.com/docs/compose/github-actions/">Leverage Github actions</a></h3><nav id="TableOfContents">
   <ul>
     <li><a href="#aws-ci">AWS CI</a></li>
     <li><a href="#algolia-ci">Algolia CI</a></li>
@@ -346,17 +353,30 @@
 </aside>
 
   <main class="content">
-    <h1>Themes&#39; Docs</h1><p>These docs consists of two parts:</p>
+    <h1>Leverage Github actions</h1><p>This theme ships with 2 github actions inside the exampleSite folder:</p>
 <ol>
-<li>Hugo Compose Themes docs</li>
-<li>Hugo Clarity Theme docs.</li>
+<li>AWS CI</li>
+<li>Algolia CI</li>
 </ol>
-<p>Please note that the features listed under each theme are independent of each other. That is to say, some features may only be found in one theme and not in both.</p>
-<!-- That content is better than dummy lorem ipsum 2) That content serves a good real-world demo for this theme 3) Publish more structured docs for each theme which are better than long blocky READMEs -->
-<a href="./compose/" class="button mb-1">Compose Theme Docs</a>
-<a href="./clarity/" class="button">Clarity Theme Docs</a>
-
-    <div class="pager pager_lean">
+<h2 id="aws-ci">AWS CI</h2>
+<p>This helps you to autodeploy your hugo website from github to an AWS s3 bucket. Set the secrets in the action accordingly and voila.</p>
+<h2 id="algolia-ci">Algolia CI</h2>
+<p>This action will automatically update your algolia search index. No extra npm manual setup will be needed.</p>
+<p>These actions are customizable to fire off under your specified set of circumstances.</p>
+<p>By default, the actions will be off, so be sure to turn them on, and set the github actions secrets appropriately.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="ln">1</span><span class="cl">name: Update Algolia Search Index
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl">off: <span class="c1"># change to `on:` to turn on</span>
+</span></span></code></pre></div>
+    <div class="pager">
+  
+    
+    <div class="pager_item prev">
+      <a href="https://chekku.com/docs/compose/customize/" class="pager_link button" title="Customize layouts &amp; components" rel="prev">
+        <span class="pager_label">Customize layouts &amp; components</span>
+      </a>
+    </div>
+    
   
 
   

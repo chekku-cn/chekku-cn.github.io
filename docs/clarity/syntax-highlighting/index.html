@@ -13,14 +13,22 @@
 <link rel="mask-icon" href='https://chekku.com/favicons/safari-pinned-tab.svg'  color="#004750">
 <link rel="shortcut icon" href='https://chekku.com/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://chekku.com/favicons/browserconfig.xml'>
-<title>Themes&#39; Docs | Compose Docs</title><meta property="og:title" content="Themes&#39; Docs" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://chekku.com/docs/" />
-<meta itemprop="name" content="Themes&#39; Docs">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Themes&#39; Docs"/>
-<meta name="twitter:description" content=""/>
+<title>Syntax Highlighting | Compose Docs</title><meta property="og:title" content="Syntax Highlighting" />
+<meta property="og:description" content="Code Display line numbers Choose whether to display line numbers within a code block globally with the parameter codeLineNumbers setting to true or false.
+1[params] 2... 3codeLineNumbers = true # Shows line numbers for all code blocks globally. 4... Limit code block height You can globally control the number of lines which are displayed by default for your code blocks. Code which has the number of lines exceed this value will dynamically cause two code block expansion buttons to appear, allowing the user to expand to full length and contract." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chekku.com/docs/clarity/syntax-highlighting/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-06-15T09:19:42+01:00" />
+<meta itemprop="name" content="Syntax Highlighting">
+<meta itemprop="description" content="Code Display line numbers Choose whether to display line numbers within a code block globally with the parameter codeLineNumbers setting to true or false.
+1[params] 2... 3codeLineNumbers = true # Shows line numbers for all code blocks globally. 4... Limit code block height You can globally control the number of lines which are displayed by default for your code blocks. Code which has the number of lines exceed this value will dynamically cause two code block expansion buttons to appear, allowing the user to expand to full length and contract.">
+<meta itemprop="dateModified" content="2023-06-15T09:19:42+01:00" />
+<meta itemprop="wordCount" content="270">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Syntax Highlighting"/>
+<meta name="twitter:description" content="Code Display line numbers Choose whether to display line numbers within a code block globally with the parameter codeLineNumbers setting to true or false.
+1[params] 2... 3codeLineNumbers = true # Shows line numbers for all code blocks globally. 4... Limit code block height You can globally control the number of lines which are displayed by default for your code blocks. Code which has the number of lines exceed this value will dynamically cause two code block expansion buttons to appear, allowing the user to expand to full length and contract."/>
 
 
 <link rel="stylesheet" href="https://chekku.com/css/styles.2644a27b95319a47f541e7073f297c3ce918f385bc3bd2648c1c3f81c24ba060cf98278adfa19f65e2baf52196ce6de92185872262ff5a30abcba7b211fb9503.css" integrity="sha512-JkSie5Uxmkf1QecHPyl8POkY84W8O9JkjBw/gcJLoGDPmCeK36GfZeK69SGWzm3pIYWHImL/WjCry6eyEfuVAw==">
@@ -28,9 +36,12 @@
 
 
 
+  <meta name="description" content="Code Display line numbers Choose whether to display line numbers within a code block globally with the parameter codeLineNumbers setting to true or false.
+1[params] 2... 3codeLineNumbers = true # Shows line numbers for all code blocks globally. 4... Limit code block height You can globally control the number of lines which are displayed by default for your code blocks. Code which has the number of lines exceed this value will dynamically cause two code block expansion buttons to appear, allowing the user to expand to full length and contract.">
+
 
 </head>
-<body class="page-section" id="pagetop">
+<body class="page-page" id="pagetop">
   <header class="nav_header">
 <nav class="wrap nav menu">
 	<a href='https://chekku.com/' class="nav_brand">
@@ -99,7 +110,7 @@
 </svg></label>
   </div>
   <section class="section aside_inner">
-    <h2 class="section_title active"><a  href="https://chekku.com/docs/" class="group">Themes&#39; Docs</a></h2>
+    <h2 class="section_title"><a  href="https://chekku.com/docs/" class="group">Themes&#39; Docs</a></h2>
       <section class="" id="docs-themes-docs">
   <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://chekku.com/docs/compose/" class="group">Compose Docs</a></h2>
@@ -315,7 +326,7 @@
     </li>
   </ul>
 </nav>
-        <h3 class="section_link"><a id="docs-syntax-highlighting" href="https://chekku.com/docs/clarity/syntax-highlighting/">Syntax Highlighting</a></h3><nav id="TableOfContents">
+        <h3 class="section_link active"><a id="docs-syntax-highlighting" href="https://chekku.com/docs/clarity/syntax-highlighting/">Syntax Highlighting</a></h3><nav id="TableOfContents">
   <ul>
     <li>
       <ul>
@@ -346,19 +357,48 @@
 </aside>
 
   <main class="content">
-    <h1>Themes&#39; Docs</h1><p>These docs consists of two parts:</p>
-<ol>
-<li>Hugo Compose Themes docs</li>
-<li>Hugo Clarity Theme docs.</li>
-</ol>
-<p>Please note that the features listed under each theme are independent of each other. That is to say, some features may only be found in one theme and not in both.</p>
-<!-- That content is better than dummy lorem ipsum 2) That content serves a good real-world demo for this theme 3) Publish more structured docs for each theme which are better than long blocky READMEs -->
-<a href="./compose/" class="button mb-1">Compose Theme Docs</a>
-<a href="./clarity/" class="button">Clarity Theme Docs</a>
+    <h1>Syntax Highlighting</h1><h3 id="code">Code</h3>
+<h4 id="display-line-numbers">Display line numbers</h4>
+<p>Choose whether to display line numbers within a code block globally with the parameter <code>codeLineNumbers</code> setting to <code>true</code> or <code>false</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="p">[</span><span class="l">params]</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="nn">...</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="l">codeLineNumbers = true</span><span class="w"> </span><span class="c"># Shows line numbers for all code blocks globally.</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w"></span><span class="nn">...</span><span class="w">
+</span></span></span></code></pre></div><h4 id="limit-code-block-height">Limit code block height</h4>
+<p>You can globally control the number of lines which are displayed by default for your code blocks. Code which has the number of lines exceed this value will dynamically cause two code block expansion buttons to appear, allowing the user to expand to full length and contract. This is useful when sharing code or scripts with tens or hundreds of lines where you wish to control how many are displayed. Under params in <code>config.toml</code> file, add a value as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="p">[</span><span class="l">params]</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="nn">...</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="l">codeMaxLines = 10</span><span class="w"> </span><span class="c"># Maximum number of lines to be shown by default across all articles.</span><span class="w">
+</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="w"></span><span class="nn">...</span><span class="w">
+</span></span></span></code></pre></div><blockquote>
+<p>If the value already exists, change it to the desired number. This will apply globally.</p>
+</blockquote>
+<p>If you need more granular control, this parameter can be overridden at the blog article level. Add the same value to your article frontmatter as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln">1</span><span class="cl"><span class="nn">...</span><span class="w">
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="l">codeMaxLines = 15</span><span class="w"> </span><span class="c"># Maximum number of lines to be shown in code blocks in this blog post.</span><span class="w">
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w"></span><span class="nn">...</span><span class="w">
+</span></span></span></code></pre></div><p>If <code>codeMaxLines</code> is specified both in <code>config.toml</code> and in the article frontmatter, the value specified in the article frontmatter will apply to the given article. In the above example, the global default is <code>10</code> and yet the article value is <code>15</code> so code blocks in this article will auto-collapse after 15 lines.</p>
+<p>If <code>codeMaxLines</code> is not specified anywhere, an internal default value of <code>100</code> will be assumed.</p>
 
-    <div class="pager pager_lean">
+    <div class="pager">
+  
+    
+    <div class="pager_item prev">
+      <a href="https://chekku.com/docs/clarity/blogging/" class="pager_link button" title="Blogging" rel="prev">
+        <span class="pager_label">Blogging</span>
+      </a>
+    </div>
+    
   
 
+  
+    
+    <div class="pager_item next">
+      <a href="https://chekku.com/docs/clarity/theme-overrides/" class="pager_link button" title="Theme Overrides" rel="next">
+        <span class="pager_label">Theme Overrides</span>
+      </a>
+    </div>
+    
   
 </div>
   </main>
